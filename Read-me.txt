@@ -1,0 +1,16 @@
+AtomikosSample is a Maven project, and Presentation and Service are Maven modules.
+
+Presentation is the War layer, while Service is the DAO (JPA integrated with Atomikos) & JMS (MQ) layer.
+
+Atomoikos is used for transactions, Apache tomcat is used for running the application.
+
+All the Connection Factory and the MQ stuff is created in the context.xml file of tomcat, while db is managed at
+persistence.xml.
+
+
+The example is created to depict Global Transactions, MQTest is the QueueManager name, 
+while MQSENDERQUEUE,MQRECEIVERQUEUE are created with in MQTest
+
+
+
+
